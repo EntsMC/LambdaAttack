@@ -4,16 +4,16 @@ import com.github.games647.lambdaattack.Options;
 import com.github.games647.lambdaattack.bot.Bot;
 import com.github.games647.lambdaattack.bot.EntitiyLocation;
 import com.github.steveice10.packetlib.event.session.PacketReceivedEvent;
-import com.github.steveice10.protocol.v1_11.data.message.Message;
-import com.github.steveice10.protocol.v1_11.packet.ingame.server.ServerChatPacket;
-import com.github.steveice10.protocol.v1_11.packet.ingame.server.ServerJoinGamePacket;
-import com.github.steveice10.protocol.v1_11.packet.ingame.server.entity.player.ServerPlayerHealthPacket;
-import com.github.steveice10.protocol.v1_11.packet.ingame.server.entity.player.ServerPlayerPositionRotationPacket;
+import com.github.steveice10.protocol.v1_15.data.message.Message;
+import com.github.steveice10.protocol.v1_15.packet.ingame.server.ServerChatPacket;
+import com.github.steveice10.protocol.v1_15.packet.ingame.server.ServerJoinGamePacket;
+import com.github.steveice10.protocol.v1_15.packet.ingame.server.entity.player.ServerPlayerHealthPacket;
+import com.github.steveice10.protocol.v1_15.packet.ingame.server.entity.player.ServerPlayerPositionRotationPacket;
 import java.util.logging.Level;
 
-public class SessionListener111 extends SessionListener {
+public class SessionListener115 extends SessionListener {
 
-    public SessionListener111(Options options, Bot owner) {
+    public SessionListener115(Options options, Bot owner) {
         super(options, owner);
     }
 
