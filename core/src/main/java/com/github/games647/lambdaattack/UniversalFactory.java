@@ -14,6 +14,8 @@ public class UniversalFactory {
                 return new com.github.games647.lambdaattack.version.v1_14.ProtocolWrapper(username);
             case VERSION_1_15:
                 return new com.github.games647.lambdaattack.version.v1_15.ProtocolWrapper(username);
+            case VERSION_1_16:
+                return new com.github.games647.lambdaattack.version.v1_16.ProtocolWrapper(username);
             default:
                 throw new IllegalArgumentException("Invalid game version");
         }
@@ -32,6 +34,9 @@ public class UniversalFactory {
                 break;
             case VERSION_1_15:
                 session.send(new com.github.steveice10.protocol.v1_15.packet.ingame.client.ClientChatPacket(message));
+                break;
+            case VERSION_1_16:
+                session.send(new com.github.steveice10.protocol.v1_16.packet.ingame.client.ClientChatPacket(message));
                 break;
             default:
                 throw new IllegalArgumentException("Invalid game version");
