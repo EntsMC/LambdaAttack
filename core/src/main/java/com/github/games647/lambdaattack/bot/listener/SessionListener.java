@@ -20,8 +20,9 @@ public abstract class SessionListener extends SessionAdapter {
 
     @Override
     public void disconnected(DisconnectedEvent disconnectedEvent) {
-        String reason = disconnectedEvent.getReason();
-        owner.getLogger().log(Level.INFO, "Disconnected: {0}", reason);
+        disconnectedEvent.getCause().printStackTrace();
+//        String reason = disconnectedEvent.getReason();
+//        owner.getLogger().log(Level.INFO, "Disconnected: {0}", reason);
     }
 
     public void onJoin() {

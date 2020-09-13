@@ -48,13 +48,7 @@ public class LambdaAttack {
 
             UniversalProtocol account = authenticate(options.gameVersion, username, "");
 
-            Bot bot;
-            if (proxies != null) {
-                Proxy proxy = proxies.get(i % proxies.size());
-                bot = new Bot(options, account, proxy);
-            } else {
-                bot = new Bot(options, account);
-            }
+            Bot bot = new Bot(options, account);
 
             this.clients.add(bot);
         }
